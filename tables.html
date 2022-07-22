@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+        }
+        .third_tab {
+            border: 1px solid #69c;
+            border-collapse: separate;
+            empty-cells: hide;
+        }
+
+        .third_tr,
+        .third_th {
+            border: 2px solid #69c;
+        }
+
+
+        table {
+            border-collapse: collapse;
+            font-family: "Lucida Sans Unicode";
+        }
+
+
+        td,
+        th {
+            padding: 5px 7px;
+            border: 1px solid black;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <p>First</p>
+
+    <table>
+        <tr>
+            <td rowspan="2" class="first">№</td>
+            <td colspan="2" style="font-weight: 600 ; text-align:center;">Теги</td>
+        </tr>
+        <tr>
+            <td class="first">Тег</td>
+            <td class="first">Значення</td>
+        </tr>
+        <tr>
+            <td class="first">1</td>
+            <td>p</td>
+            <td rowspan="4">Для тексту</td>
+        </tr>
+        <tr>
+            <td class="first">2</td>
+            <td>a</td>
+        </tr>
+        <tr>
+            <td class="first">3</td>
+            <td>b</td>
+        </tr>
+
+        <tr>
+            <td class="first">4</td>
+            <td>i</td>
+        </tr>
+        <tr>
+            <td class="first">5</td>
+            <td>table</td>
+            <td>Таблиця</td>
+        </tr>
+        <tr>
+            <td class="first">6</td>
+            <td>tr</td>
+            <td>Рядок таблиці</td>
+        </tr>
+        <tr>
+            <td class="first">7</td>
+            <td>td</td>
+            <td rowspan="2">Комірка таблиці</td>
+        </tr>
+        <tr>
+            <td class="first">8</td>
+            <td>th</td>
+        </tr>
+    </table>
+
+
+    <p>Second</p>
+
+    <table>
+        <tr>
+            <td style="background-color: yellow;">№</td>
+            <td style="background-color: yellow;">ПІБ студента</td>
+            <td style="background-color: yellow;">Адреса</td>
+            <td style="background-color: yellow;">Телефон</td>
+        </tr>
+        <tr>
+            <td style="background-color: blue ;">1</td>
+            <td>Петров І.В.</td>
+            <td>Адреса1</td>
+            <td>+30506663232</td>
+        </tr>
+        <tr>
+            <td style="background-color: blue ;">2</td>
+            <td>Сидоров П.А.</td>
+            <td>Адреса2</td>
+            <td>+30505553232</td>
+        </tr>
+        <tr>
+            <td style="background-color: blue ;">3</td>
+            <td>Козачук А.Р.</td>
+            <td>Адреса3</td>
+            <td>+30507773232</td>
+        </tr>
+        <tr>
+            <td style="background-color: blue ;">4</td>
+            <td>Карпатський О.Д.</td>
+            <td>Адреса4</td>
+            <td>+30501113232</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="background-color: green;">Загальна кількість</td>
+            <td style="background-color: green;">4</td>
+        </tr>
+    </table>
+
+    <P>Third</p>
+    <table class="third_tab">
+        <tr>
+            <td class="third_th">Company</td>
+            <td class="third_th">Q1</td>
+            <td class="third_th">Q2</td>
+            <td class="third_th">Q3</td>
+        </tr>
+        <tr>
+            <td class="third_th">Microsoft</td>
+            <td class="third_th">20.3</td>
+            <td class="third_th">30.5</td>
+            <td class="third_th"></td>
+        </tr>
+        <tr>
+            <td class="third_th">Google</td>
+            <td class="third_th">50.2</td>
+            <td class="third_th">40.63</td>
+            <td class="third_th">45.23</td>
+        </tr>
+    </table>
+
+    <p>Fourth</p>
+    <table>
+        <tr>
+            <td class="third_th" style="height:40px; background-color: #69c;" colspan="5">Шапка</td>
+        </tr>
+        <tr>
+            <td class="third_th">Меню</td>
+            <td class="third_th">Меню</td>
+            <td class="third_th">Меню</td>
+            <td class="third_th">Меню</td>
+            <td class="third_th">Меню</td>
+        </tr>
+        <tr>
+            <td class="third_th" style="height:100px; background-color: #69c;" colspan="2">Новости</td>
+            <td class="third_th" style="height:100px" colspan="3">Контент</td>
+        </tr>
+
+    </table>
+
+    <p>Fifth</p>
+    <table>
+        <tr>
+            <td class="third_th" style="height:40px; width: 100px; background-color: green;">Шапка</td>
+            <td class="third_th" style="height: 100px" rowspan="2">Контент</td>
+        </tr>
+        <tr>
+            <td class="third_th">Меню</td>
+        </tr>
+        <tr>
+            <td class="third_th" style=" background-color: green;" colspan="2">низ сайта</td>
+        </tr>
+
+    </table>
+    <p>Sixth</p>
+    <table>
+
+        <tr>
+            <td class="third_th" style="height: 100px; background-color: purple;" rowspan="3">Новости</td>
+            <td class="third_th" style="height:40px; width: 100px; background-color: rgb(143, 99, 188);">Шапка</td>
+
+        </tr>
+        <tr>
+            <td class="third_th" style="background-color: rgb(222, 160, 222);">Меню</td>
+        </tr>
+        <tr>
+            <td class="third_th" style=" background-color: rgba(244, 244, 150, 0.485); height: 100px;" colspan="2">
+                Контент</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

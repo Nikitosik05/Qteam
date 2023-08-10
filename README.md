@@ -1,2 +1,0 @@
-# Qteam
-test
